@@ -17,10 +17,11 @@ Standard LLMs often hallucinate citations or invent molecular binding affinities
 The pipeline is built on a directed acyclic graph (DAG) using LangGraph, consisting of the following core components:
 
 1. **The Researcher (Agent Node):** Receives the biological query, plans the research strategy, and autonomously triggers parallel tool calls.
-2. **The Tools (API Connectors):** - `pubmed_search`: Dynamically fetches recent medical literature and PMIDs using BioPython.
+2. **The Tools (API Connectors):**
+   - `pubmed_search`: Dynamically fetches recent medical literature and PMIDs using BioPython.
    - `chembl_search`: Retrieves molecular bioactivity data (IC50, binding affinity) via the ChEMBL API.
-3. **The Summarizer (Formatting Node):** Synthesizes the raw API outputs into a highly structured, professional Markdown clinical report.
-4. **The Evaluator (LLM-as-a-Judge):** An independent scoring script utilizing **Pydantic** structured outputs. It compares the final report against the raw API data, penalizing the system if any PMIDs or data points are hallucinated.
+4. **The Summarizer (Formatting Node):** Synthesizes the raw API outputs into a highly structured, professional Markdown clinical report.
+5. **The Evaluator (LLM-as-a-Judge):** An independent scoring script utilizing **Pydantic** structured outputs. It compares the final report against the raw API data, penalizing the system if any PMIDs or data points are hallucinated.
 
 ---
 
