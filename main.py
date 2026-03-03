@@ -50,15 +50,30 @@ app = workflow.compile()
 
 if __name__ == "__main__":
     from langchain_core.messages import HumanMessage
-    inputs = {"messages": [HumanMessage(content="Is MAPK1 a target for Alzheimer's?")]}
+
+    print("\n" + "="*50)
+    print("🧬 Welcome to BioReason: Autonomous Target Validator")
+    print("="*50)
+    
+    # Ask the user for input
+    print("\nWhat drug target or disease would you like to research?")
+    print("(Example: 'Is MAPK1 a target for Alzheimer's?')")
+    user_query = input("\n> ")
+    
+    # Handle empty inputs safely
+    if not user_query.strip():
+        print("No query provided. Exiting BioReason...")
+        sys.exit(0)
+        
+    inputs = {"messages": [HumanMessage(content=user_query)]}
     
     print("\n🚀 STARTING BIOREASON PIPELINE...\n")
     final_state = app.invoke(inputs)
     
-    # 1. Extract the Final Report
+    # Extract the Final Report
     final_report = final_state["messages"][-1].content
     
-    # 2. Extract the Raw Tool Data that the agent found
+    # Extract the Raw Tool Data that the agent found
     raw_tool_data = "\n".join(
         [msg.content for msg in final_state["messages"] if msg.type == "tool"]
     )
@@ -68,7 +83,7 @@ if __name__ == "__main__":
     print(final_report)
     print("="*50 + "\n")
     
-    # 3. Grade the Report!
+    # Grade the Report!
     print("⚖️ GRADING THE REPORT...\n")
     scorecard = grade_report(raw_tool_data, final_report)
     
