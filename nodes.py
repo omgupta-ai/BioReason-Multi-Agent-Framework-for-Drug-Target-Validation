@@ -8,6 +8,10 @@ from tools import pubmed_search, chembl_search
 
 load_dotenv()
 
+'''from langchain_community.chat_models import ChatOllama
+# Swapping out Groq for local MedGemma
+llm = ChatOllama(model="medgemma", temperature=0)'''
+
 llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
 tools = [pubmed_search, chembl_search]
 llm_with_tools = llm.bind_tools(tools)
