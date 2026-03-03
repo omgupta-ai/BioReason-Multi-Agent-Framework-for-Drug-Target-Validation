@@ -3,6 +3,7 @@ An autonomous multi-agent AI framework using LangGraph and Groq (Llama 3.3) to v
 
 Built with **LangGraph** and **Groq (Llama 3.3 70B)**, BioReason tackles one of the biggest challenges in medical AI: **hallucinations**. It enforces strict tool-calling, real-time API grounding, and features an automated "LLM-as-a-Judge" evaluation loop to guarantee high-precision, hallucination-free clinical reports.
 
+![Architecture](Architecture.png)
 ---
 
 ## 🚀 The Problem & The Solution
