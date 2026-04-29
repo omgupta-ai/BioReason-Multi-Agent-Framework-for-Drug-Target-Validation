@@ -1,7 +1,7 @@
 # BioReason-Multi-Agent-Framework-for-Drug-Target-Validation
-An autonomous multi-agent AI framework using LangGraph and Groq (Llama 3.3) to validate medical drug targets, featuring an automated LLM-as-a-Judge evaluator to guarantee 0% hallucinations.
+An autonomous multi-agent AI framework using LangGraph and Groq (Llama 3.3) to validate medical drug targets, featuring an automated LLM-as-a-Judge evaluator that scores reports for hallucination and precision against raw tool data.
 
-Built with **LangGraph** and **Groq (Llama 3.3 70B)**, BioReason tackles one of the biggest challenges in medical AI: **hallucinations**. It enforces strict tool-calling, real-time API grounding, and features an automated "LLM-as-a-Judge" evaluation loop to guarantee high-precision, hallucination-free clinical reports.
+Built with **LangGraph** and **Groq (Llama 3.3 70B)**, BioReason tackles one of the biggest challenges in medical AI: **hallucinations**. It enforces strict tool-calling, real-time API grounding, and uses an automated "LLM-as-a-Judge" evaluation loop that scores generated reports against raw tool output on hallucination and precision dimensions, flagging any report that falls below a configurable pass threshold.
 
 ![Architecture](Architecture.png)
 ---
@@ -9,7 +9,7 @@ Built with **LangGraph** and **Groq (Llama 3.3 70B)**, BioReason tackles one of 
 ## 🚀 The Problem & The Solution
 Standard LLMs often hallucinate citations or invent molecular binding affinities when asked complex biological questions. 
 
-**BioReason** solves this by removing the LLM's ability to guess. Instead, it acts as a reasoning engine that orchestrates a workflow: it queries real scientific databases, extracts exact data points, formats a clinical summary, and then ruthlessly grades its own output against the raw API data to ensure 100% factual accuracy.
+**BioReason** addresses this by constraining the LLM to act as a reasoning engine over verified data. It queries real scientific databases, extracts exact data points, formats a clinical summary, and then grades its own output against the raw API data, surfacing any cited PMIDs or numeric values that do not appear in the underlying tool responses.
 
 ## 🧠 System Architecture
 
