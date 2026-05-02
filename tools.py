@@ -10,7 +10,6 @@ def pubmed_search(query:str):
     Search PubMed for medical literature. 
     Use this when you need to find research papers or abstracts about a drug target.
     """
-    Entrez.email = "your-email@northeastern.edu"
     handle = Entrez.esearch(db="pubmed", term=query, retmax=3)
     record = Entrez.read(handle)
     id_list = record["IdList"]

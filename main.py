@@ -1,7 +1,10 @@
 # main.py
+from dotenv import load_dotenv
+load_dotenv()
 from langgraph.graph import StateGraph, END
 from nodes import AgentState, researcher_node, tool_node, critic_node, summarizer_node
 from evaluator import grade_report
+
 
 workflow = StateGraph(AgentState)
 
