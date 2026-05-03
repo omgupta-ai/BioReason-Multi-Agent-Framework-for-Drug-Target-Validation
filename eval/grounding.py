@@ -61,10 +61,15 @@ def extract_numeric_claims(text: str) -> list[tuple[float, str]]:
     return claims
 
 
-def pmid_grounding_rate(report: str, expected_pmids: list[str]) -> dict:
-    """How many cited PMIDs are in the expected set."""
+def pmid_grounding_rate(report: str, raw_tool_data: str) -> dict:
+    """How many PMIDs cited in the report appear in the raw tool data.
+
+    A PMID in the report that does not appear anywhere in raw_tool_data is
+    a fabricated citation: the LLM is asserting a paper exists that its
+    tools never returned.
+    """
     cited = extract_pmids(report)
-    expected = set(expected_pmids or [])
+    available = extract_pmids(raw_tool_data)
 
     if not cited:
         return {
@@ -74,7 +79,7 @@ def pmid_grounding_rate(report: str, expected_pmids: list[str]) -> dict:
             "ungrounded": [],
         }
 
-    ungrounded = sorted(cited - expected)
+    ungrounded = sorted(cited - available)
     grounded = len(cited) - len(ungrounded)
     return {
         "cited": len(cited),
