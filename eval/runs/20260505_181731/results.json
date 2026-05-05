@@ -1,0 +1,378 @@
+{
+  "summary": {
+    "runs": 18,
+    "ok": 10,
+    "failed": 8,
+    "avg_pmid_grounding_rate": 1.0,
+    "avg_numeric_grounding_rate": 0.6,
+    "avg_judge_hallucination": 7.333,
+    "avg_judge_precision": 7.556,
+    "judge_pass_rate": 0.667,
+    "avg_elapsed_s": 27.392
+  },
+  "results": [
+    {
+      "id": "q006",
+      "query": "How does atorvastatin inhibit HMG-CoA reductase?",
+      "category": "mechanism",
+      "status": "pipeline_failed",
+      "error": "Error code: 400 - {'error': {'message': \"Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=pubmed_search{\"query\": \"atorvastatin HMG-CoA reductase inhibition mechanism\"}</function>\\n'}}",
+      "elapsed_s": 0.23
+    },
+    {
+      "id": "q009",
+      "query": "What is the role of beta-amyloid in Alzheimer's disease?",
+      "category": "mechanism",
+      "status": "ok",
+      "elapsed_s": 6.21,
+      "expected_pmids_count": 10,
+      "final_report": "# \ud83e\uddec BioReason Target Validation Report\n## \ud83c\udfaf Target Overview\nThe target of interest is beta-amyloid, a peptide that plays a central role in the development of Alzheimer's disease. Beta-amyloid accumulation in the brain is thought to contribute to the development of Alzheimer's disease by promoting inflammation, damaging neurons, and disrupting normal brain function.\n\n## \ud83d\udcda Literature Evidence (Cite PMIDs)\nResearch has shown that beta-amyloid can accumulate in the brain in several different forms, including as soluble oligomers, insoluble fibrils, and plaques (PMID: 42082924, PMID: 42081371). The soluble oligomers are thought to be the most toxic form of beta-amyloid, as they can bind to and damage neurons, leading to cell death and cognitive decline. Studies have also investigated the role of beta-amyloid in Alzheimer's disease, including its involvement in inflammation, oxidative stress, and disruption of normal brain function (PMID: 42080655).\n\n## \ud83e\uddea Molecular Bioactivity\nThe molecular bioactivity of beta-amyloid is complex and multifaceted. Beta-amyloid can trigger an inflammatory response in the brain, which can lead to the activation of immune cells and the release of pro-inflammatory chemicals. It can also lead to the production of reactive oxygen species (ROS), which can damage neurons and contribute to cell death. Additionally, beta-amyloid can disrupt normal brain function by binding to and damaging neurons, as well as by interfering with the normal functioning of synapses and neural circuits. ICAM-1 has been shown to play a role in modifying microglial phagocytic and inflammatory functions via the ERK-STAT3 signalling pathway, contributing to A\u03b2 clearance and cognitive improvements (PMID: 42080655).\n\n## \u2696\ufe0f Final Verdict (Is it a good target?)\nBased on the literature evidence, beta-amyloid appears to be a promising target for the development of therapeutic strategies for Alzheimer's disease. Reducing beta-amyloid levels or preventing its accumulation is a major focus of current research into the disease. However, the exact mechanisms by which beta-amyloid contributes to Alzheimer's disease are not yet fully understood, and further research is needed to fully elucidate its role in the disease. Additionally, the development of effective treatments for Alzheimer's disease will likely require a combination of therapeutic strategies, including beta-amyloid-lowering therapies, anti-inflammatory therapies, antioxidant therapies, and neuroprotective therapies. IC50 values for beta-amyloid are not available in the current literature pull.",
+      "raw_tool_data_chars": 8037,
+      "raw_tool_data_preview": "1. Mol Pharm. 2026 May 4. doi: 10.1021/acs.molpharmaceut.5c01565. Online ahead of\n print.\n\nEstimation of Various Physiological Parameters Affecting Amyloid Plaque \nDistribution of a Novel MRI Contrast Agent in the Brain of Alzheimer's Disease \nTransgenic Mice.\n\nSalian V(1), Wang Z(1), Curran G(2), Podulso JF(3), Kandimalla KK(1).\n\nAuthor information:\n(1)Department of Pharmaceutics and Brain Barriers Research Center, College of \nPharmacy, University of Minnesota, Minneapolis, Minnesota 55455, Uni",
+      "pmid_grounding": {
+        "cited": 3,
+        "grounded": 3,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "numeric_grounding": {
+        "cited": 0,
+        "grounded": 0,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "judge": {
+        "hallucination_score": 10,
+        "precision_score": 8,
+        "passed": true,
+        "reasoning": "The report correctly quotes molecular affinities and PMIDs from the raw data, but does not provide exact IC50 values. The PMIDs cited in the report are found in the raw data, indicating no hallucinations. However, the report could be improved by providing more precise data, such as IC50 values, to support its claims."
+      }
+    },
+    {
+      "id": "q010",
+      "query": "How does metformin affect AMPK signaling?",
+      "category": "mechanism",
+      "status": "ok",
+      "elapsed_s": 25.71,
+      "expected_pmids_count": 10,
+      "final_report": "# \ud83e\uddec BioReason Target Validation Report\n## \ud83c\udfaf Target Overview\nThe target of interest is the AMP-activated protein kinase (AMPK) pathway, which plays a crucial role in cellular energy metabolism. Metformin, a well-known therapeutic agent, activates the AMPK pathway, leading to increased glucose uptake, improved insulin sensitivity, and enhanced mitochondrial function.\n\n## \ud83d\udcda Literature Evidence (Cite PMIDs)\nThe activation of AMPK by metformin has been shown to have anti-inflammatory and anti-oxidative effects, and it may also play a role in the regulation of autophagy and cell survival. According to the literature, the AMPK-NRF2-FOXO axis serves as a central \"redox-metabolic rheostat\" that maintains renal homeostasis but is commonly dysfunctional in chronic kidney disease (CKD) (PMID: 42072052). Additionally, metformin has been shown to alleviate rotenone-induced parkinson's-like pathology via modulation of mitophagy and NLRP3-pyroptosis (PMID: 42070766). Ferroptosis, an iron-dependent form of regulated cell death, has also been implicated in cardiovascular disease progression, and metformin has been discussed as a potential therapeutic agent for targeting ferroptosis (PMID: 42064862).\n\n## \ud83e\uddea Molecular Bioactivity\nThe molecular bioactivity of metformin is characterized by its ability to activate the AMPK pathway, which leads to increased glucose uptake, improved insulin sensitivity, and enhanced mitochondrial function. The activation of AMPK by metformin also has anti-inflammatory and anti-oxidative effects, and it may play a role in the regulation of autophagy and cell survival. The IC50 value of metformin for AMPK activation is not available in the current literature pull.\n\n## \u2696\ufe0f Final Verdict (Is it a good target?)\nBased on the literature evidence, the AMPK pathway is a promising target for therapeutic intervention in various diseases, including CKD, Parkinson's disease, and cardiovascular disease. Metformin, which activates the AMPK pathway, has shown potential in alleviating disease pathology and improving patient outcomes. However, further research is needed to fully understand the molecular mechanisms underlying the activation of AMPK by metformin and to explore its potential as a therapeutic agent in different disease contexts. Data not available in current literature pull includes specific numerical data on the efficacy of metformin in different disease models.",
+      "raw_tool_data_chars": 8757,
+      "raw_tool_data_preview": "1. Antioxidants (Basel). 2026 Mar 24;15(4):409. doi: 10.3390/antiox15040409.\n\nThe AMPK/NRF2/FOXO Axis in CKD-Molecular and Clinical Perspectives.\n\nLu\u010di\u0107 I(1), Vojkovi\u0107 M(2), Milkovi\u0107 L(1).\n\nAuthor information:\n(1)Laboratory for Membrane Transport and Signaling, Division of Molecular \nMedicine, Ru\u0111er Bo\u0161kovi\u0107 Institute, Bijeni\u010dka Cesta 54, 10000 Zagreb, Croatia.\n(2)Department of Nephrology, Clinic of Internal Medicine, General Hospital \nZadar, Bo\u017ee Peri\u010di\u0107a 5, 23000 Zadar, Croatia.\n\nChronic Kidne",
+      "pmid_grounding": {
+        "cited": 3,
+        "grounded": 3,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "numeric_grounding": {
+        "cited": 0,
+        "grounded": 0,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "judge": {
+        "hallucination_score": 10,
+        "precision_score": 9,
+        "passed": true,
+        "reasoning": "The report correctly quotes PMIDs from the raw data and provides a clear overview of the AMPK pathway and its role in various diseases. However, the report lacks specific numerical data on the efficacy of metformin in different disease models, which is a drawback. The precision score is high due to the accurate citation of PMIDs and the clear explanation of the molecular bioactivity of metformin. The hallucination score is also high because the report does not introduce any made-up data or PMIDs."
+      }
+    },
+    {
+      "id": "q011",
+      "query": "What is the binding affinity of gefitinib to EGFR?",
+      "category": "binding_affinity",
+      "status": "ok",
+      "elapsed_s": 51.46,
+      "expected_pmids_count": 10,
+      "final_report": "# \ud83e\uddec BioReason Target Validation Report\n## \ud83c\udfaf Target Overview\nThe target of interest is the Epidermal Growth Factor Receptor (EGFR), a protein that plays a crucial role in cell growth and division. EGFR is an attractive target for cancer therapy, particularly for non-small-cell lung cancer (NSCLC).\n\n## \ud83d\udcda Literature Evidence (Cite PMIDs)\nSeveral studies have investigated the potential of EGFR inhibitors as cancer therapeutics. For example, a study published in RSC Advances (PMID: 42080178) reported the synthesis and biological evaluation of benzochromene and benzochromenopyrimidine derivatives as potential EGFR-TK inhibitors. Another study published in the European Journal of Pharmaceutical Sciences (PMID: 41839309) described the preclinical validation of tetrahydroquinoline derivatives as EGFR inhibitors, which showed potential cytotoxicity against glioblastoma cells. Additionally, a study published in Bioorganic Chemistry (PMID: 41795340) identified a novel 2-anilinoquinazoline derivative, JS04, as a potent apoptosis-inducing agent in drug-resistant NSCLC cells, with a stronger binding affinity to the EGFR kinase than gefitinib.\n\n## \ud83e\uddea Molecular Bioactivity\nThe molecular bioactivity of EGFR inhibitors has been evaluated in various studies. For instance, the study published in RSC Advances (PMID: 42080178) reported that compound 7 exhibited a promising binding affinity toward EGFR, with a docking score of -9.06 kcal mol-1, comparable to that of gefitinib. The study published in the European Journal of Pharmaceutical Sciences (PMID: 41839309) found that THQPMP, a tetrahydroquinoline-derived triarylmethane, exhibited a strong binding affinity to the EGFR receptor of -6.92 kcal/mol. The study published in Bioorganic Chemistry (PMID: 41795340) showed that JS04 formed stable hydrogen bonds with hinge region residues MET793 and GLN791 and exhibited strong binding affinity toward the EGFR kinase.\n\n## \u2696\ufe0f Final Verdict (Is it a good target?)\nBased on the literature evidence, EGFR appears to be a promising target for cancer therapy, particularly for NSCLC. The identification of potent EGFR inhibitors, such as JS04, and the demonstration of their ability to induce apoptosis in cancer cells, suggest that targeting EGFR may be an effective strategy for treating cancer. However, further research is needed to fully validate the potential of EGFR inhibitors as cancer therapeutics. The binding affinity of gefitinib to EGFR is not explicitly stated in the provided text, and therefore, Data not available in current literature pull.",
+      "raw_tool_data_chars": 10218,
+      "raw_tool_data_preview": "[]\n1. RSC Adv. 2026 Apr 30;16(25):22450-22464. doi: 10.1039/d6ra02423h. eCollection \n2026 Apr 29.\n\nNew benzochromene-based compounds as potential EGFR-TK inhibitors: synthesis, \nanti-proliferative activity, molecular docking studies, and ADME profiles.\n\nHekal MH(1), Abdullah Alzahrani AY(2), Alrashdi S(3), Abu El-Azm FSM(1), Ali \nYM(1).\n\nAuthor information:\n(1)Department of Chemistry, Faculty of Science, Ain Shams University Abbassia \n11566 Cairo Egypt mohamed.hekal@sci.asu.edu.eg.\n(2)Department",
+      "pmid_grounding": {
+        "cited": 3,
+        "grounded": 3,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "numeric_grounding": {
+        "cited": 1,
+        "grounded": 1,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "judge": {
+        "hallucination_score": 10,
+        "precision_score": 9,
+        "passed": true,
+        "reasoning": "The report accurately quotes molecular affinities from the raw data and provides a comprehensive overview of the literature evidence. However, the report does not provide any new or original data, and the final verdict is based on the analysis of existing studies. The precision score is high due to the accurate quoting of molecular affinities, but the hallucination score is also high because the report does not introduce any new or made-up data."
+      }
+    },
+    {
+      "id": "q012",
+      "query": "Is PCSK9 a validated target for hypercholesterolemia?",
+      "category": "target_validation",
+      "status": "ok",
+      "elapsed_s": 46.71,
+      "expected_pmids_count": 10,
+      "final_report": "# \ud83e\uddec BioReason Target Validation Report\n## \ud83c\udfaf Target Overview\nThe target of interest is Proprotein Convertase Subtilisin/Kexin Type 9 (PCSK9), a protein that plays a central role in regulating low-density lipoprotein (LDL) receptor expression. PCSK9 is a validated target for hypercholesterolemia, and its inhibitors have demonstrated significant efficacy in enhancing LDL receptor activity and subsequent cholesterol clearance.\n\n## \ud83d\udcda Literature Evidence (Cite PMIDs)\nThe literature evidence supports the role of PCSK9 as a therapeutic target for hypercholesterolemia. According to PMID: 41953595, PCSK9 monoclonal antibodies remain the best-validated add-on for very high-risk patients. Additionally, PMID: 41935388 discusses the emerging pharmacological therapies in the management of hyperlipidemia, including PCSK9 inhibitors. Furthermore, PMID: 41687316 provides an overview of the evolving therapeutic landscape of PCSK9 inhibition, highlighting its potential as a therapeutic target.\n\n## \ud83e\uddea Molecular Bioactivity\nThe molecular bioactivity data for PCSK9 inhibitors is limited in the provided data. However, the data suggests that PCSK9 inhibitors have demonstrated significant efficacy in enhancing LDL receptor activity and subsequent cholesterol clearance. The IC50 values for PCSK9 inhibitors are not consistently reported, but some values are available, such as 285.6 uM, 147.8 uM, and 1.38 uM, although the units and accuracy of these values are not clear. Data not available in current literature pull for a comprehensive analysis of IC50 values.\n\n## \u2696\ufe0f Final Verdict (Is it a good target?)\nBased on the literature evidence and molecular bioactivity data, PCSK9 appears to be a good target for the treatment of hypercholesterolemia. The genetic validation of PCSK9 as a therapeutic target, combined with the efficacy of PCSK9 inhibitors in clinical trials, supports its potential as a therapeutic target. However, further research is needed to fully understand the molecular bioactivity of PCSK9 inhibitors and to develop more effective and safe therapies.",
+      "raw_tool_data_chars": 14453,
+      "raw_tool_data_preview": "1. J Clin Med Res. 2026 Mar 26;18(3):121-141. doi: 10.14740/jocmr6523.\neCollection  2026 Mar.\n\nNovel Approaches to Lipid Management: Beyond Statins and PCSK9 Inhibitors.\n\nPatel J(1), Shah S(2), Reddy A(2), Prajapati D(1), Pandya A(1)(2), Sawhney \nS(2)(3).\n\nAuthor information:\n(1)Department of Biomedical Engineering, Florida Atlantic University, Boca \nRaton, FL, USA.\n(2)Department of Technology and Clinical Trials, Advanced Research LLC, Pompano \nBeach, FL, USA.\n(3)Oncology and Hematology Associa",
+      "pmid_grounding": {
+        "cited": 3,
+        "grounded": 3,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "numeric_grounding": {
+        "cited": 3,
+        "grounded": 0,
+        "rate": 0.0,
+        "ungrounded": [
+          "285.6 um",
+          "147.8 um",
+          "1.38 um"
+        ]
+      },
+      "judge": {
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jjmr0rjcfrta3k0ajwk405x3` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 6481, Requested 5605. Please try again in 430ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+      }
+    },
+    {
+      "id": "q013",
+      "query": "How does aspirin inhibit COX-1 and COX-2?",
+      "category": "mechanism",
+      "status": "ok",
+      "elapsed_s": 6.73,
+      "expected_pmids_count": 10,
+      "final_report": "# \ud83e\uddec BioReason Target Validation Report\n## \ud83c\udfaf Target Overview\nThe target of interest is COX-1 and COX-2, enzymes involved in the production of prostaglandins and thromboxanes. Aspirin, a non-steroidal anti-inflammatory drug (NSAID), inhibits COX-1 and COX-2 by irreversibly binding to the active site of the enzymes, leading to a reduction in inflammation, pain, and fever, as well as a decrease in platelet aggregation.\n\n## \ud83d\udcda Literature Evidence (Cite PMIDs)\nThe literature evidence suggests that aspirin has a clear anti-inflammatory effect, whereas other compounds such as cannabidiol (CBD) and hemp extracts may fail to inhibit and may even exacerbate the inflammatory response (PMID: 41978156). Aspirin's mechanism of action is complex and involves the acetylation of a serine residue in the active site of COX-1 and COX-2, preventing the binding of arachidonic acid and the subsequent production of prostaglandins and thromboxanes. The use of low-dose aspirin has been supported in cancer prevention and treatment, with studies suggesting that it prevents cancer by inhibiting platelet activation and the release of thromboxane A2 (PMID: 41592353). Additionally, aspirin's effects on macrophages include inflammation resolution, cytokine regulation, and increased phagocytosis, which may contribute to its chemopreventive effects (PMID: 40991180).\n\n## \ud83e\uddea Molecular Bioactivity\nThe molecular bioactivity of aspirin is characterized by its ability to irreversibly inhibit COX-1 and COX-2, leading to a reduction in the production of prostaglandins and thromboxanes. The exact IC50 values for aspirin's inhibition of COX-1 and COX-2 are not provided in the current literature pull. However, it is known that aspirin's inhibition of COX-1 and COX-2 is dose-dependent and can vary depending on the specific context and cell type.\n\n## \u2696\ufe0f Final Verdict (Is it a good target?)\nBased on the literature evidence, COX-1 and COX-2 are valid targets for the prevention and treatment of inflammation, pain, and cancer. Aspirin's ability to irreversibly inhibit these enzymes makes it a effective therapeutic agent. However, the use of aspirin is not without risks, and the benefits must be balanced against the potential bleeding risk. Further research is needed to fully understand the mechanisms of aspirin's effects and to identify individuals who are most likely to benefit from its use. Data not available in current literature pull includes specific IC50 values for aspirin's inhibition of COX-1 and COX-2, as well as a comprehensive understanding of the molecular mechanisms underlying aspirin's effects on macrophages and other cell types.",
+      "raw_tool_data_chars": 9310,
+      "raw_tool_data_preview": "1. Nutrients. 2026 Mar 30;18(7):1106. doi: 10.3390/nu18071106.\n\nEvaluation of Anti-Inflammatory Effects of Cannabis sativa Extracts via Possible \nModulation of mRNA Levels of Inflammatory Cytokines and Cannabinoid Receptors.\n\nBartkowiak-Wieczorek J(1), Kujawski R(2), Szulc M(2), Czora-Poczwardowska K(2), \nSzymczak J(1), Gierszewska J(3), Miotk M(4), Miko\u0142ajczak P(2), M\u0105dry E(1), \nGrzelak T(1).\n\nAuthor information:\n(1)Physiology Department, Poznan University of Medical Sciences, 60-179 Poznan, \nP",
+      "pmid_grounding": {
+        "cited": 3,
+        "grounded": 3,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "numeric_grounding": {
+        "cited": 0,
+        "grounded": 0,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "judge": {
+        "hallucination_score": 10,
+        "precision_score": 9,
+        "passed": true,
+        "reasoning": "The FINAL REPORT accurately quotes molecular affinities and PMIDs from the RAW TOOL DATA, demonstrating a strong understanding of the subject matter. The report correctly cites PMIDs 41978156, 41592353, and 40991180, which are present in the raw data. The precision score is high due to the accurate quoting of molecular affinities and PMIDs. The hallucination score is also high because the report does not introduce any made-up PMIDs or facts."
+      }
+    },
+    {
+      "id": "q014",
+      "query": "What are IC50 values for nilotinib against BCR-ABL1?",
+      "category": "binding_affinity",
+      "status": "ok",
+      "elapsed_s": 11.87,
+      "expected_pmids_count": 9,
+      "final_report": "# \ud83e\uddec BioReason Target Validation Report\n## \ud83c\udfaf Target Overview\nThe target of interest is BCR-ABL1, a fusion protein resulting from a chromosomal abnormality that creates the Philadelphia chromosome, commonly associated with certain types of leukemia.\n\n## \ud83d\udcda Literature Evidence (Cite PMIDs)\nData not available in current literature pull.\n\n## \ud83e\uddea Molecular Bioactivity\nThe IC50 value for nilotinib against BCR-ABL1 is reported to be 20-30 nM, indicating the potency of nilotinib in inhibiting the BCR-ABL1 kinase activity.\n\n## \u2696\ufe0f Final Verdict (Is it a good target?)\nBased on the available information, BCR-ABL1 appears to be a viable target for therapeutic intervention, particularly with tyrosine kinase inhibitors like nilotinib. However, a comprehensive evaluation of the literature and additional data would be necessary to fully assess its potential as a target.",
+      "raw_tool_data_chars": 2,
+      "raw_tool_data_preview": "[]",
+      "pmid_grounding": {
+        "cited": 0,
+        "grounded": 0,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "numeric_grounding": {
+        "cited": 1,
+        "grounded": 0,
+        "rate": 0.0,
+        "ungrounded": [
+          "-30.0 nm"
+        ]
+      },
+      "judge": {
+        "hallucination_score": 0,
+        "precision_score": 0,
+        "passed": false,
+        "reasoning": "The report contains information about BCR-ABL1 and its association with leukemia, as well as the potency of nilotinib in inhibiting the BCR-ABL1 kinase activity. However, there are no PMIDs cited in the report and the information appears to be general knowledge rather than being grounded in specific, cited literature. The report also does not provide exact numbers with cited PMIDs, which affects the precision score."
+      }
+    },
+    {
+      "id": "q015",
+      "query": "Is MAPK1 a target for Alzheimer's disease?",
+      "category": "target_validation",
+      "status": "ok",
+      "elapsed_s": 26.71,
+      "expected_pmids_count": 10,
+      "final_report": "# \ud83e\uddec BioReason Target Validation Report\n## \ud83c\udfaf Target Overview\nThe target of interest is MAPK1, which has been identified as a potential target for Alzheimer's disease.\n\n## \ud83d\udcda Literature Evidence (Cite PMIDs)\nSeveral studies have investigated the role of MAPK1 in neurodegenerative diseases, including Alzheimer's disease. According to PMID: 41885638, \u03b2-cryptoxanthin has been shown to interact with MAPK1, suggesting its potential as a therapeutic agent for neurodegenerative diseases. Additionally, PMID: 41639713 found that borneol essential oil alleviated cognitive deficits and neuroinflammatory responses in an APP/PS1 transgenic mouse model of Alzheimer's disease, with MAPK1 identified as one of the core targets. Furthermore, PMID: 41113163 revealed that Toddalia asiatica compounds, such as 8-Hydroxybergapten, bind to MAPK1 with favorable affinities, suggesting their potential as cognitive-enhancing therapeutics.\n\n## \ud83e\uddea Molecular Bioactivity\nThe molecular bioactivity of MAPK1 has been investigated in several studies. The binding affinities of various compounds to MAPK1 have been reported, including:\n- \u03b2-cryptoxanthin: Data not available in current literature pull.\n- 8-Hydroxybergapten: -6.7 kcal/mol (PMID: 41113163)\n- Guaiol: Data not available in current literature pull.\nThe IC50 values of these compounds are not available in the current literature pull.\n\n## \u2696\ufe0f Final Verdict (Is it a good target?)\nBased on the available literature evidence, MAPK1 appears to be a promising target for Alzheimer's disease. The interactions between MAPK1 and various compounds, such as \u03b2-cryptoxanthin and 8-Hydroxybergapten, suggest their potential as therapeutic agents for neurodegenerative diseases. However, further validation through preclinical and clinical studies is required to confirm the efficacy of these compounds. Therefore, MAPK1 can be considered a good target for further investigation.",
+      "raw_tool_data_chars": 9349,
+      "raw_tool_data_preview": "Target not found.\n1. J Pharm Pharmacol. 2026 Mar 5;78(3):rgag029. doi: 10.1093/jpp/rgag029.\n\nCryptoxanthin as a multitarget neuroprotective agent: mechanistic and in silico \nperspectives.\n\nSadhukhan A(1), Chauhan A(1), Kumar M(1), Singh TG(1), Mujwar S(1), Awasthi \nA(1).\n\nAuthor information:\n(1)Chitkara College of Pharmacy, Chitkara University, Jansla, Rajpura, Punjab \n140401, India.\n\nOBJECTIVES: Neurodegenerative diseases such as Parkinson's disease (PD), \nHuntington's disease (HD), Alzheimer's",
+      "pmid_grounding": {
+        "cited": 3,
+        "grounded": 3,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "numeric_grounding": {
+        "cited": 1,
+        "grounded": 0,
+        "rate": 0.0,
+        "ungrounded": [
+          "-6.7 kcal/mol"
+        ]
+      },
+      "judge": {
+        "hallucination_score": 8,
+        "precision_score": 9,
+        "passed": true,
+        "reasoning": "The report correctly quotes molecular affinities from the raw data and provides accurate PMIDs. However, some data is missing, such as the binding affinity of \u03b2-cryptoxanthin to MAPK1. The report also provides a clear and well-structured overview of the target validation, including literature evidence and molecular bioactivity."
+      }
+    },
+    {
+      "id": "q016",
+      "query": "What is the mechanism of trastuzumab in HER2-positive breast cancer?",
+      "category": "mechanism",
+      "status": "ok",
+      "elapsed_s": 25.7,
+      "expected_pmids_count": 10,
+      "final_report": "# \ud83e\uddec BioReason Target Validation Report\n## \ud83c\udfaf Target Overview\nThe target of interest is the HER2 protein, which is overexpressed in HER2-positive breast cancer cells. Trastuzumab, a monoclonal antibody, binds to the HER2 protein, slowing or stopping the growth of cancer cells. However, trastuzumab can cause cardiotoxicity, particularly in patients with preexisting cardiovascular risk factors. Newer HER2-targeted therapies, such as antibody-drug conjugates, have been developed to improve efficacy and reduce cardiotoxicity.\n\n## \ud83d\udcda Literature Evidence (Cite PMIDs)\nThe literature evidence suggests that trastuzumab-related cardiotoxicity remains a significant concern, while newer HER2-targeted agents generally demonstrate favorable cardiac safety profiles (PMID: 42080343). The tumor microenvironment plays a critical role in determining the efficacy of these therapies, particularly in HER2-low breast cancer (PMID: 42075798). Additionally, successful replacement therapy after a confirmed vitamin D deficiency may correlate with improved disease-free survival in patients with HER2-positive breast cancer (PMID: 42075066).\n\n## \ud83e\uddea Molecular Bioactivity\nThe molecular bioactivity of trastuzumab involves binding to the HER2 protein, which helps to slow or stop the growth of cancer cells. Newer HER2-targeted therapies, such as antibody-drug conjugates, have been developed to improve efficacy and reduce cardiotoxicity. The IC50 values for these therapies are not available in the current literature pull. The role of the tumor microenvironment in determining the efficacy of these therapies is critical, and research has shown that the tumor microenvironment can create a barrier to the delivery of antibody-drug conjugates to tumor cells.\n\n## \u2696\ufe0f Final Verdict (Is it a good target?)\nBased on the literature evidence, the HER2 protein is a valid target for the treatment of HER2-positive breast cancer. However, the cardiotoxicity associated with trastuzumab is a significant concern. Newer HER2-targeted therapies, such as antibody-drug conjugates, may offer improved efficacy and reduced cardiotoxicity. Further research is needed to fully understand the role of the tumor microenvironment in determining the efficacy of these therapies and to explore the potential benefits of vitamin D replacement therapy in improving disease-free survival. The available data suggest that the HER2 protein is a good target, but further studies are needed to fully realize its potential. Data not available in current literature pull includes specific IC50 values for newer HER2-targeted therapies.",
+      "raw_tool_data_chars": 7182,
+      "raw_tool_data_preview": "1. Expert Opin Drug Saf. 2026 May 4. doi: 10.1080/14740338.2026.2667402. Online \nahead of print.\n\nLong-term cardiotoxicity outcomes of trastuzumab and cardiac safety of novel \nHER2-targeted therapies.\n\nEsen SA(1), Uncu D(2), Sendur MAN(2)(3).\n\nAuthor information:\n(1)Bursa Doruk Nil\u00fcfer Hospital, Department of Medical Oncology, Bursa, Turkey.\n(2)Ankara Bilkent City Hospital, Department of Medical Oncology, Ankara, Turkey.\n(3)Department of Medical Oncology, Ankara Y\u0131ld\u0131r\u0131m Beyaz\u0131t University Facul",
+      "pmid_grounding": {
+        "cited": 3,
+        "grounded": 3,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "numeric_grounding": {
+        "cited": 0,
+        "grounded": 0,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "judge": {
+        "hallucination_score": 10,
+        "precision_score": 9,
+        "passed": true,
+        "reasoning": "The report accurately quotes PMIDs from the raw data and provides a clear overview of the target and its validation. However, the report lacks specific IC50 values for newer HER2-targeted therapies, which are not available in the current literature pull. The report also correctly references the role of the tumor microenvironment in determining the efficacy of these therapies and the potential benefits of vitamin D replacement therapy."
+      }
+    },
+    {
+      "id": "q017",
+      "query": "How does sildenafil inhibit phosphodiesterase 5?",
+      "category": "mechanism",
+      "status": "ok",
+      "elapsed_s": 55.61,
+      "expected_pmids_count": 10,
+      "final_report": "# \ud83e\uddec BioReason Target Validation Report\n## \ud83c\udfaf Target Overview\nThe target of interest is phosphodiesterase 5 (PDE5), an enzyme that plays a crucial role in the regulation of cyclic guanosine monophosphate (cGMP) levels. PDE5 inhibitors, such as sildenafil, have been shown to increase cGMP levels, leading to smooth muscle relaxation and increased blood flow.\n\n## \ud83d\udcda Literature Evidence (Cite PMIDs)\nSeveral studies have investigated the role of PDE5 inhibitors in various diseases, including pulmonary arterial hypertension (PAH) and erectile dysfunction (ED). A study published in Bioorg Chem (PMID: 42035601) demonstrated that a novel PDE5 inhibitor, CPD1, attenuates PAH through dual modulation of cGMP and TRPM8-mediated pathways. Another study published in Niger J Physiol Sci (PMID: 42008323) reviewed the traditional approaches to treating ED in Africa, highlighting the potential of African medicinal plants as alternative treatment options. Additionally, a study published in Cephalalgia (PMID: 41789856) investigated the hypersensitivity to PDE5 inhibition in post-traumatic headache, providing evidence of cGMP-dependent signaling.\n\n## \ud83e\uddea Molecular Bioactivity\nPDE5 inhibitors, such as sildenafil, bind to the active site of the PDE5 enzyme, preventing the breakdown of cGMP. This leads to an increase in cGMP levels, resulting in smooth muscle relaxation and increased blood flow. The IC50 value of sildenafil for PDE5 inhibition is not available in the provided literature. However, the study on CPD1 (PMID: 42035601) demonstrated its potent PDE5 inhibitory activity, although the exact IC50 value is not reported.\n\n## \u2696\ufe0f Final Verdict (Is it a good target?)\nBased on the available literature, PDE5 appears to be a promising target for the treatment of various diseases, including PAH and ED. The development of novel PDE5 inhibitors, such as CPD1, may offer improved therapeutic options for these conditions. However, further research is needed to fully understand the molecular mechanisms and potential side effects of PDE5 inhibition. Data on the IC50 values of PDE5 inhibitors, including sildenafil, is not available in the current literature pull. Therefore, a comprehensive evaluation of PDE5 as a target requires additional information on its biochemical properties and pharmacological profile.",
+      "raw_tool_data_chars": 9371,
+      "raw_tool_data_preview": "1. Bioorg Chem. 2026 Apr 22;177:109908. doi: 10.1016/j.bioorg.2026.109908. Online\n ahead of print.\n\nThe novel PDE5 inhibitor CPD1 attenuates pulmonary arterial hypertension through \ndual modulation of cGMP and TRPM8-mediated pathways.\n\nMu Y(1), Sun J(2), Zhang X(3), Zhu H(1), Li B(1), Qiu H(1), Zhao Z(1), Zhou \nS(1), Li F(4), Zhao AZ(5).\n\nAuthor information:\n(1)The School of Biomedical and Pharmaceutical Sciences, Guangdong University of \nTechnology, Guangzhou, Guangdong Province, PR China.\n(2)H",
+      "pmid_grounding": {
+        "cited": 3,
+        "grounded": 3,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "numeric_grounding": {
+        "cited": 0,
+        "grounded": 0,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "judge": {
+        "hallucination_score": 8,
+        "precision_score": 9,
+        "passed": false,
+        "reasoning": "The report correctly quotes molecular affinities and PMIDs from the raw data, but lacks specific IC50 values for PDE5 inhibitors. The report also provides a clear overview of the target and its potential as a therapeutic option. However, the lack of specific biochemical data and potential side effects of PDE5 inhibition are notable limitations."
+      }
+    },
+    {
+      "id": "q018",
+      "query": "What is the binding affinity of dasatinib to SRC kinase?",
+      "category": "binding_affinity",
+      "status": "ok",
+      "elapsed_s": 17.21,
+      "expected_pmids_count": 10,
+      "final_report": "# \ud83e\uddec BioReason Target Validation Report\n## \ud83c\udfaf Target Overview\nThe target of interest is SRC kinase, a protein tyrosine kinase involved in various cellular processes. The provided data does not explicitly state the binding affinity of dasatinib to SRC kinase. However, it does provide information on the IC50 values of dasatinib and another compound, PLX-5622, for a related target, SRC kinase signaling inhibitor 1.\n\n## \ud83d\udcda Literature Evidence (Cite PMIDs)\nThe provided data does not include any explicit PMIDs that can be cited. However, the data is based on assays with ChEMBL IDs 'CHEMBL4603626' and 'CHEMBL5653201', which may be related to publications in 'Bioorg Med Chem Lett' (2020) and 'Nat Commun' (2019), respectively. Data not available in current literature pull.\n\n## \ud83e\uddea Molecular Bioactivity\nThe IC50 value of dasatinib for SRC kinase signaling inhibitor 1 is 100.0 uM. In contrast, PLX-5622 has an IC50 value of 1.0 uM for the same target. The exact binding affinity of dasatinib to SRC kinase is not available in the provided data.\n\n## \u2696\ufe0f Final Verdict (Is it a good target?)\nBased on the available data, it is difficult to determine the efficacy of dasatinib as a SRC kinase inhibitor. The IC50 value of 100.0 uM for SRC kinase signaling inhibitor 1 suggests that dasatinib may not be a potent inhibitor of SRC kinase. However, further research is needed to determine the exact binding affinity of dasatinib to SRC kinase and to fully assess its potential as a therapeutic target. Data not available in current literature pull.",
+      "raw_tool_data_chars": 2931,
+      "raw_tool_data_preview": "[{'action_type': None, 'activity_comment': None, 'activity_id': 20600674, 'activity_properties': [], 'assay_chembl_id': 'CHEMBL4603626', 'assay_description': \"Inhibition of recombinant full length human SRCN1 expressed in baculovirus expression system using tyrosine-2 peptide as substrate incubated for 60 mins in presence of ATP by Z'-LYTE assay\", 'assay_type': 'B', 'assay_variant_accession': None, 'assay_variant_mutation': None, 'bao_endpoint': 'BAO_0000190', 'bao_format': 'BAO_0000019', 'bao_l",
+      "pmid_grounding": {
+        "cited": 0,
+        "grounded": 0,
+        "rate": 1.0,
+        "ungrounded": []
+      },
+      "numeric_grounding": {
+        "cited": 3,
+        "grounded": 0,
+        "rate": 0.0,
+        "ungrounded": [
+          "100.0 um",
+          "1.0 um",
+          "100.0 um"
+        ]
+      },
+      "judge": {
+        "hallucination_score": 0,
+        "precision_score": 6,
+        "passed": false,
+        "reasoning": "The FINAL REPORT contains some information from the RAW TOOL DATA, but it also includes some made-up data, such as the mention of dasatinib, which is not present in the RAW TOOL DATA. The report also fails to provide exact molecular affinities, such as -6.7 kcal/mol, and instead provides IC50 values in uM. The report does not include any explicit PMIDs, but it does mention some ChEMBL IDs and journal names, which may be related to publications."
+      }
+    },
+    {
+      "id": "q019",
+      "query": "Is TP53 a druggable target in cancer?",
+      "category": "target_validation",
+      "status": "pipeline_failed",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jjmr0rjcfrta3k0ajwk405x3` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 95827, Requested 4437. Please try again in 3m48.096s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "elapsed_s": 3.87
+    },
+    {
+      "id": "q020",
+      "query": "What is the role of alpha-synuclein in Parkinson's disease?",
+      "category": "mechanism",
+      "status": "pipeline_failed",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jjmr0rjcfrta3k0ajwk405x3` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98348, Requested 4285. Please try again in 37m54.912s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "elapsed_s": 12.26
+    },
+    {
+      "id": "q021",
+      "query": "How does warfarin inhibit vitamin K epoxide reductase?",
+      "category": "mechanism",
+      "status": "pipeline_failed",
+      "error": "Error code: 400 - {'error': {'message': \"Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=pubmed_search{\"query\": \"warfarin vitamin K epoxide reductase inhibition mechanism\"}</function>'}}",
+      "elapsed_s": 0.2
+    },
+    {
+      "id": "q022",
+      "query": "Is JAK2 a validated target for myeloproliferative disorders?",
+      "category": "target_validation",
+      "status": "pipeline_failed",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jjmr0rjcfrta3k0ajwk405x3` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99255, Requested 908. Please try again in 2m20.832s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "elapsed_s": 0.04
+    },
+    {
+      "id": "q023",
+      "query": "What is the mechanism of fluoxetine on serotonin reuptake?",
+      "category": "mechanism",
+      "status": "pipeline_failed",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jjmr0rjcfrta3k0ajwk405x3` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99255, Requested 887. Please try again in 2m2.688s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "elapsed_s": 0.04
+    },
+    {
+      "id": "q024",
+      "query": "What is the binding affinity of XYZQRT-9999 to FAKE-PROTEIN-1?",
+      "category": "adversarial",
+      "status": "pipeline_failed",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jjmr0rjcfrta3k0ajwk405x3` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99255, Requested 915. Please try again in 2m26.88s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "elapsed_s": 0.04
+    },
+    {
+      "id": "q025",
+      "query": "Is ZZZQQQ-42 a validated target for fictional disease BLARGH?",
+      "category": "adversarial",
+      "status": "pipeline_failed",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jjmr0rjcfrta3k0ajwk405x3` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99255, Requested 910. Please try again in 2m22.56s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "elapsed_s": 0.04
+    }
+  ]
+}
